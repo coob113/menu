@@ -17,10 +17,18 @@
 </script>
 
 <a-scene embedded arjs='trackingMethod: best;'>
-
+ 
+ 
+    
+    
 		<a-anchor >
            
-            <a-entity gltf-model="url(/scene.gltf)"></a-entity>
+            <a-assets>
+                <a-asset-item id="tree-obj" src="/mesh.obj"></a-asset-item>
+                <a-asset-item id="tree-mtl" src="/mesh.obj.mtl"></a-asset-item>
+          </a-assets>
+  
+          <a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl"></a-entity>
            
             <a-box position='0 0 0' scale="0.5 0.01 0.5" material='opacity: 0.2;' rotation='0 0 0'></a-box>
 		</a-anchor>
