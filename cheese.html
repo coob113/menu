@@ -9,15 +9,13 @@
     .a-enter-vr-button{ display:none; }
 </style>   
 
-<div style='position: fixed; top: 10px; width:100%; text-align:left; padding: 10px;  z-index: 1; font-family: Arial, Helvetica, sans-serif; font-weight:100; font-size: 12px;'><p> Your Restaurant Logo</p></div>
-
-<div style='position: fixed;  width:100%; text-align:center; padding: 10px;  z-index: 2; font-family: Arial, Helvetica, sans-serif; font-weight:900; font-size: 20px;'><p> Cheese Board<br>120AED</p></div>
+<div style='position: fixed; top: 10px; width:100%; text-align:left; padding: 10px;  z-index: 1; font-family: Arial, Helvetica, sans-serif; font-weight:800; font-size: 20px;'><p> Cheese Board<br>120AED</p></div>
 
 <button type="button"  style='background-color:#4CAF50;  border: none; padding: 10px;  z-index: 1; font-family: Arial, Helvetica, sans-serif; font-size: 16px; color: white; padding: 15px 32px; position: absolute; right: 10px; top: 10px; '  onclick="">✓ ORDER</button>
 
 <button type="button"  style='background-color:white;  border: none; padding: 10px;  z-index: 1; font-family: Arial, Helvetica, sans-serif; font-size: 16px; color: grey; padding: 15px 32px; position: absolute; right: 10px; bottom: 10px; '  onclick="location.href='https://coob113.github.io/menu/golden'">NEXT →</button>
  
-<button type="button"  style='background-color:white;  border: none; padding: 10px;  z-index: 1; font-family: Arial, Helvetica, sans-serif; font-size: 16px; color: grey; padding: 15px 32px; position: absolute; left: 10px; bottom: 10px; '  onclick="location.href='https://coob113.github.io/menu/golden'"> ← PREV</button>
+<button type="button"  style='background-color:white;  border: none; padding: 10px;  z-index: 1; font-family: Arial, Helvetica, sans-serif; font-size: 16px; color: grey; padding: 15px 32px; position: absolute; left: 10px; bottom: 10px; '  onclick="location.href='https://coob113.github.io/menu/golden'">← PREV</button>
 
 <script>
       AFRAME.registerComponent('alpha-test', {
@@ -32,9 +30,9 @@
  
 		<a-anchor >
         
-         <a-entity position="0 -1 0" scale="0.3 0.3 0.3" gltf-model="https://raw.githubusercontent.com/coob113/menu/master/cheese_board/scene.gltf"></a-entity>
+         <a-entity position="0 -1 0" scale="0.25 0.25 0.25" gltf-model="https://raw.githubusercontent.com/coob113/menu/master/cheese_board/scene.gltf"></a-entity>
            
-            <a-box position='0 0 0' scale="0.5 0.01 0.5" material='opacity: 0.2;' rotation='0 0 0'></a-box>
+        <a-box position='0 0 0' scale="0.5 0.01 0.5" material='opacity: 0.2;' rotation='0 0 0'></a-box>
 		</a-anchor>
 
 		<a-camera-static/>
