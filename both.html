@@ -15,9 +15,9 @@
 
 <button type="button"  style='background-color:#4CAF50;  border: none; padding: 10px;  z-index: 1; font-family: Arial, Helvetica, sans-serif; font-size: 16px; color: white; padding: 15px 32px; position: absolute; right: 10px; top: 10px; '  onclick="">✓ ORDER</button>
 
-<button type="button"  style='background-color:white;  border: none; padding: 10px;  z-index: 1; font-family: Arial, Helvetica, sans-serif; font-size: 16px; color: grey; padding: 15px 32px; position: absolute; right: 10px; bottom: 10px; '  onclick="location.href='https://coob113.github.io/menu/golden'">NEXT →</button>
+<button type="button"  style='background-color:white;  border: none; padding: 10px;  z-index: 1; font-family: Arial, Helvetica, sans-serif; font-size: 16px; color: grey; padding: 15px 32px; position: absolute; right: 10px; bottom: 10px; '  onclick="myFunction()'">NEXT →</button>
  
-<button type="button"  style='background-color:white;  border: none; padding: 10px;  z-index: 1; font-family: Arial, Helvetica, sans-serif; font-size: 16px; color: grey; padding: 15px 32px; position: absolute; left: 10px; bottom: 10px; '  onclick="location.href='https://coob113.github.io/menu/golden'"> ← PREV</button>
+<button type="button"  style='background-color:white;  border: none; padding: 10px;  z-index: 1; font-family: Arial, Helvetica, sans-serif; font-size: 16px; color: grey; padding: 15px 32px; position: absolute; left: 10px; bottom: 10px; '  onclick="location.href='myFunction()'"> ← PREV</button>
 
 <script>
       AFRAME.registerComponent('alpha-test', {
@@ -26,14 +26,26 @@
           this.el.getObject3D('mesh').material.alphaTest = 0.2;
           }
       });
+    
+    function myFunction() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
 </script>
 
 <a-scene embedded arjs='trackingMethod: best;'>
  
 		<a-anchor >
         
-         <a-entity position="0 -1 0" scale="0.3 0.3 0.3" gltf-model="https://raw.githubusercontent.com/coob113/menu/master/cheese_board/scene.gltf"></a-entity>
+         <a-entity position="0 -1 0" scale="0.25 0.25 0.25" gltf-model="https://raw.githubusercontent.com/coob113/menu/master/cheese_board/scene.gltf"></a-entity>
            
+        <a-entity id="myDIV" position="0 -1 0" scale="0.25 0.25 0.25" rotation="0 210 0" gltf-model="https://raw.githubusercontent.com/coob113/menu/master/golden_roll/scene.gltf"></a-entity>
+            
+            
             <a-box position='0 0 0' scale="0.5 0.01 0.5" material='opacity: 0.2;' rotation='0 0 0'></a-box>
 		</a-anchor>
 
