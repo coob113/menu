@@ -2,6 +2,9 @@
 This demo shows advantages of using augumented reality for showing dish in real size on visitors table before ordering and cooking it. </br>
 It uses marker printed on paper table mat to get real scaling.
 
+# Marker
+Please print Hiro marker on A3 paper format. ARjs is using it for placing model.
+https://github.com/coob113/menu/blob/master/a3.pdf
 </br>
 </br>
 </br>
