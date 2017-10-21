@@ -3,8 +3,6 @@ This demo shows advantages of using augumented reality for showing dish in real 
 It uses marker printed on paper table mat to get real scaling.</br>
 [![video](https://raw.githubusercontent.com/coob113/menu/master/01.png)](https://www.youtube.com/watch?v=BbouXx6oe0o)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/BbouXx6oe0o" frameborder="0" allowfullscreen></iframe>
-
 # Marker
 Please print Hiro marker on A3 paper format. ARjs is using it for placing model.
 https://github.com/coob113/menu/blob/master/a3.pdf
