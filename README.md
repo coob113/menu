@@ -1,7 +1,7 @@
 # Restaurant Menu in Augumented Reality
 This demo shows advantages of using augumented reality for showing dish in real size on visitors table before ordering and cooking it. </br>
-It uses marker printed on paper table mat to get real scaling.
-[![text](https://i.ytimg.com/vi/BbouXx6oe0o/1.jpg?time=1508571524804)](https://www.youtube.com/watch?v=BbouXx6oe0o)
+It uses marker printed on paper table mat to get real scaling.</br>
+[![video](https://raw.githubusercontent.com/coob113/menu/master/01.png)](https://www.youtube.com/watch?v=BbouXx6oe0o)
 
 
 # Marker
